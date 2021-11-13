@@ -1,0 +1,27 @@
+{
+  "name": "lab1",
+  "version": "0.0.1",
+  "description": "this project is about creating a back-application and study how to work with server-site with js",
+  "main": "xml_server.js",
+  "scripts": {
+    "server": "nodemon xml_server",
+    "start": "nodemon client"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "server"
+  ],
+  "author": "Isakov Michail",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "node-fetch": "^3.0.0",
+    "xmlrpc": "^1.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}

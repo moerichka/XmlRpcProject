@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Node JS APP</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="app">
+    
+    <form action="/" method="POST" class="app__content" >
+      <h1>Оставьте свое сообщение здесь</h1>
+      <div class="input">
+        <label for="name">Имя</label>
+        <input type="text" id="name" placeholder="" name="name">
+      </div>
+      <div class="input">
+        <label for="surname">Фамилия</label>
+        <input type="text" id="surname" placeholder="" name="surname">
+      </div>
+      <div class="input">
+        <label for="number">Возраст</label>
+        <input type="number" id="number" placeholder="Напишите свое число" name="number">
+      </div>
+      <div class="input">
+        <label for="mes">Сообщение</label>
+        <input type="text" id="mes" placeholder="Напишите свое сообщение" name="mes">
+      </div>
+      <div>
+        <input type="checkbox" id="programmer" name="programmer"
+               checked>
+        <label for="scales">Программист</label>
+      </div>
+      <div>
+        <input type="checkbox" id="designer" name="designer">
+        <label for="designer">Дизайнер</label>
+      </div>
+      
+      <button type="submit" class="btn">Отправить сообщение</button>
+    </form>
+    <div class="app__header">
+      <% if(value) {%>
+        <h1><%=value%></h1>
+        <% } %>
+    </div>
+  </div>
+</body>
+</html>
+
